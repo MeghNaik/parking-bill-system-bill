@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parking Bill System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Parking Bill System</h1>
+  <div id="form-container">
+    <label for="licensePlate">License Plate:</label>
+    <input type="text" id="licensePlate" placeholder="ABC-123">
+    <label for="entryTime">Entry Time:</label>
+    <input type="datetime-local" id="entryTime" required>
+    <button id="calculateButton">Calculate Bill</button>
+  </div>
+  <div id="bill-container" style="display: none;">
+    <h2>Parking Bill</h2>
+    <p>License Plate: <span id="plateDisplay"></span></p>
+    <p>Entry Time: <span id="entryTimeDisplay"></span></p>
+    <p>Exit Time: <span id="exitTimeDisplay"></span></p>
+    <p>Total Parking Time: <span id="parkingTimeDisplay"></span></p>
+    <p>Total Bill: <b>Rs.</b><span id="totalBillDisplay"></span></p>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
